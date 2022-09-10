@@ -1,0 +1,101 @@
+.offer{
+    padding: 100px 0px;
+    background: rgba(0,0,0,0) url(promotions_area_bg_1.jpg) no-repeat scroll center center / cover;
+    position: relative;
+    
+}
+.offer::after{
+    content: '';
+    padding: 100px 0px;
+    background: #000 url(pattarn.png);
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+}
+.offer .container{
+    position: relative;
+    z-index: 10;
+}
+.offer .container h1{
+    font-family: 'Dancing Script', cursive;
+    color: brown;
+    font-size: 5vw;
+}
+.offer-slider{
+    position: relative;
+    z-index: 1;
+    padding: 50px 0px;
+}
+.offer-slider .carousel-item img{
+    width: 70% !important;
+}
+.offer .carousel-caption{
+    top: 20%;
+    left: 50%;
+    background: #fff;
+    width: 45%;
+    height: 60%;
+    color: #000;
+    padding: 50px !important;
+    text-align: left;
+}
+.offer .carousel-caption button{
+    color: brown;
+    border: 1px solid brown;
+    border-radius: 0;
+    padding: 8px 20px;
+}
+.offer .carousel-indicators button{
+    border-radius: 50% !important;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    bottom: -50px !important;
+}
+.offer .carousel-indicators{
+    bottom: -50px !important;
+}
+@media (max-width:1190px){
+    .offer-slider .carousel-item img{
+        width: 100% !important;
+    }
+    .offer .carousel-caption{
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-size: 22px;
+        padding: 50px !important;
+        text-align: center;
+    }
+    .offer .carousel-caption button{
+        color: #fff;
+        border: 1px solid brown;
+        font-size: 22px;
+        border-radius: 0;
+        padding: 8px 20px;
+        
+    }
+}
+
+@media (max-width:500px){
+    .offer .carousel-caption button{
+        color: #fff;
+        border: 1px solid brown;
+        font-size: 18px;
+        border-radius: 0;
+        padding: 8px 20px;
+        
+    }
+    .offer .carousel-caption{
+        font-size: 18px;
+        padding: 20px !important;
+        text-align: left;
+    }
+}

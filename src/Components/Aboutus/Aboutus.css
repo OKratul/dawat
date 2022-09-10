@@ -1,0 +1,20 @@
+.about{
+    padding: 100px 0px;
+    background:rgba(0, 0,0,0) url(home_three_about_bg.png) no-repeat scroll center bottom / contain;
+}
+
+.about .about-details{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 50px;
+    row-gap: 50px;
+}
+.about .container h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 7vw;
+    color: brown;
+}
+.about .about-details p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5vw;
+}

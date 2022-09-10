@@ -1,0 +1,51 @@
+ const menu =[
+    {
+        id: 1,
+        image: "images/menu_1.jpg",
+        name: "item-1",
+        category: "breakfast",
+        price: "3.00 $",
+        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", 
+    },
+    {
+        id: 2,
+        image: "images/menu_2.jpg",
+        name: "item-2",
+        category: "breakfast",
+        price: "4.00$",
+        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", 
+    },
+    {
+        id: 3,
+        image: "images/menu_3.jpg",
+        name: "item-3",
+        category: "lunch",
+        price: "3.5 $",
+        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", 
+    },
+    {
+        id: 4,
+        image: "images/menu_4.jpg",
+        name: "item-4",
+        category: "dinner",
+        price: "3.5 $",
+        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", 
+    },
+    {
+        id: 5,
+        image: "images/menu_5.jpg",
+        name: "item-5",
+        category: "coffe",
+        price: "3.5 $",
+        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", 
+    },
+    {
+        id: 6,
+        image: "images/menu_6.jpg",
+        name: "item-6",
+        category: "snack",
+        price: "3.5 $",
+        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", 
+    },
+]
+export default menu;
