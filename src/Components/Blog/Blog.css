@@ -1,0 +1,76 @@
+.blog{
+    position: relative;
+    padding: 100px 0px;
+    background: rgba(0,0,0,0) url(promotions_area_bg_3.jpg)no-repeat scroll center center / cover;
+}
+.blog::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(pattarn.png) rgba(0, 0, 0, 0.8);
+
+}
+.blog .container{
+    position: relative;
+    z-index: 10;
+}
+.blog .container div h2{
+    color: brown;
+    font-size: 5vw;
+    font-family: 'Dancing Script', cursive;
+}
+.recipe-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    justify-content: space-between;
+    row-gap: 30px;
+}
+.recipe-container .card-body{
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.recipe-container .card-body .card-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: rgb(247, 196, 196);
+}
+.recipe-container .card-body img{
+    padding: 0;
+    margin: 0;
+}
+.recipe-container .card-text{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.recipe-container .card-body:hover .card-text{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0.7s;
+}
+.recipe-container .card-body:hover img{
+    scale: 1.1;
+    transition: 1s;
+}
+.recipe-container .card-body button{
+    border: 1px solid #fff;
+}
+.recipe-container .card-body button:hover{
+    border: 1px solid brown;
+    background: brown;
+}
+.card-body button a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}

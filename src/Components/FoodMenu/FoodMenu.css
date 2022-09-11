@@ -15,3 +15,76 @@
     background: transparent;
     color: brown;
 }
+.food-menu .reservation{
+    background: rgba(0,0,0,0) url(promotions_area_bg_2.jpg) no-repeat scroll center center / cover;
+    text-align: center;
+    padding: 100px 0px;
+   position: relative;
+}
+.food-menu .reservation::after{
+    content: '';
+    position:absolute ;
+    background: rgba(2, 2, 2, 0.8) url(pattarn.png);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+.food-menu .reservation .btn{
+    background: #fff;
+    font-size: 20px;
+    margin-top: 25px;
+    color: brown;
+    padding: 10px 50px;
+    text-transform: uppercase;
+}
+.food-menu .reservation h1{
+    color: #fff;
+    font-size: 5vw;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.food-menu .reservation .btn:hover{
+    background: brown;
+    color: #fff;
+    transition: 0.8s;
+    border: 1.5px solid #fff;
+}
+.food-menu .reservation .container{
+    position: relative;
+    z-index: 10;
+}
+.food-menu .modal-Content{
+    position: relative !important;
+    background: brown !important;
+}
+.food-menu .modal-content .close{
+    position: absolute !important;
+    right: 0;
+}
+.modal-header{
+    justify-content: center !important;
+    font-family: 'Poppins', sans-serif !important;
+    text-transform: uppercase;
+    color: #fff;
+}
+.modal-body{
+    background: brown !important;
+    color: #fff;
+    padding: 25px 20px;
+}
+.modal-body input{
+    background: transparent;
+    color: #ccc;
+    border: 0.5px solid #000;
+}
+
+.modal-body input::placeholder{
+    color:#ccc ;
+}
+.modal-footer{
+    justify-content: center;
+}

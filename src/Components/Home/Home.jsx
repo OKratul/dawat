@@ -5,6 +5,8 @@ import { HomeSlider } from '../HomeSlider/HomeSlider';
 import { Aboutus } from '../Aboutus/Aboutus';
 import { Offer } from '../Offer/Offer';
 import { FoodMenu } from '../FoodMenu/FoodMenu';
+import { Team } from '../Team/Team';
+import { Blog } from '../Blog/Blog';
 export const Home = () => {
   return (
     <>
@@ -13,6 +15,8 @@ export const Home = () => {
         <Aboutus></Aboutus>
         <Offer/>
         <FoodMenu/>
+        <Team></Team>
+        <Blog/>
     </>
   )
 }
