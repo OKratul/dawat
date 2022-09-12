@@ -1,0 +1,15 @@
+.page{
+    position: relative !important;
+    z-index: 10 !important;
+}
+.item{
+    position: relative !important;
+    z-index: 10 !important;
+    display: inline-block;
+    margin-left: 20px;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+}
+.link{
+    color: aliceblue !important;
+}

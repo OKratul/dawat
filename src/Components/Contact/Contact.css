@@ -1,0 +1,49 @@
+.contact {
+    background: rgba(0,0,0,0) url(footer_bg_2.jpg) no-repeat scroll center center / cover;
+    padding: 100px 0px;
+    position: relative;
+}
+.contact::after{
+    content: '';
+    background: rgba(0,0,0,0.8) url(pattarn.png) ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.contact .container{
+    position: relative;
+    z-index: 10;
+}
+.contact .conatct-title{
+    text-align: center;  
+}
+
+.contact .conatct-title h2{
+    font-size: 5vw;
+    font-family: 'Dancing Script', cursive;
+    color: brown;
+}
+.contact .contact-social ul{
+    padding: 0 !important;
+}
+
+.contact .contact-social li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+}
+.contact .contact-content{
+    margin-top: 50px;
+    color: antiquewhite;
+}
+.contact .contact-social a{
+    color: antiquewhite;
+    font-size: 25px;
+}
+
+.contact .contact-social a:hover{
+    color: brown;
+    transition: 0.5s;
+}

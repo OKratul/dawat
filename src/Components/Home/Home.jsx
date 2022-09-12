@@ -7,6 +7,7 @@ import { Offer } from '../Offer/Offer';
 import { FoodMenu } from '../FoodMenu/FoodMenu';
 import { Team } from '../Team/Team';
 import { Blog } from '../Blog/Blog';
+import { Contact } from '../Contact/Contact';
 export const Home = () => {
   return (
     <>
@@ -17,6 +18,7 @@ export const Home = () => {
         <FoodMenu/>
         <Team></Team>
         <Blog/>
+        <Contact/>
     </>
   )
 }

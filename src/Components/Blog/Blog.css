@@ -24,7 +24,7 @@
 }
 .recipe-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
     justify-content: space-between;
     row-gap: 30px;
 }
@@ -32,6 +32,7 @@
     padding: 0;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 .recipe-container .card-body .card-text{
     position: absolute;
@@ -73,4 +74,19 @@
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+@media (max-width:991px){
+    .recipe-container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+        justify-content: space-between;
+        row-gap: 30px;
+    }
+}
+@media (max-width:767px){
+    .recipe-container{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+        justify-content: center;
+        row-gap: 30px;
+    }
 }

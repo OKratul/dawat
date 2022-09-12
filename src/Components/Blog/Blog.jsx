@@ -1,11 +1,13 @@
+import { Pagination } from '../Pagination/Pagination';
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { Posts } from '../Posts/Posts';
 import './Blog.css';
 
 export const Blog = () => {
   const [posts, setPosts] = useState([]);
-  const [loding, setLoding] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [currentPage,setCurrentPage] = useState(1);
   const [postPerPage,setPostPerPage] = useState(6);
 
@@ -22,15 +24,16 @@ export const Blog = () => {
   };
 
   useEffect(()=>{
-   setLoding(true);
+   setLoading(true);
     fetch(`https://cooking-recipe2.p.rapidapi.com/getbycat/Indian%20Desserts`,options)
     .then(res =>res.json())
     .then(data => setPosts(data))
     .catch(err=> console.Consolelog(err));
-    setLoding(false);
+    setLoading(false);
   },[]);
   
   console.log(posts)
+    const paginate= (pageNumber) => setCurrentPage(pageNumber);
   return (
     <>
       <div className="blog" id='blog'>
@@ -41,33 +44,16 @@ export const Blog = () => {
               </h2>
             </div>
             <div className="recipe-container mt-5">
-                {
-                  currentPosts.map((post,pos) => {
-                      return(
-                          <div className='card' key={pos} > 
-                              <div className='card-body'>
-                                  <img src={post.img} alt="" className='img-fluid' />
-                                <div className="card-text p-2">
-                                  <div>
-                                    <h4>
-                                      Recipe: {post.title} ,
-                                    </h4>
-                                    <h5>
-                                      Catagorie: {post.category}
-                                    </h5>
-                                    <button className='btn' type='button'>
-                                      <a href={post.url} target="_blank">
-                                        See Recipe
-                                      </a>
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                              
-                          </div>
-                      )
-                  })
-                }
+                <Posts posts={posts} loading={loading} currentPosts={currentPosts}></Posts>
+               
+            </div>
+            <div className='mt-4'>
+              <Pagination 
+              postPerPage={postPerPage} 
+              totalPost={posts.length} 
+              paginate={paginate}
+              post={posts}
+                ></Pagination>
             </div>
           </div>
       </div>
